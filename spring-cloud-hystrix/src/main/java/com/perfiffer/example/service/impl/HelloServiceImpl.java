@@ -1,6 +1,7 @@
 package com.perfiffer.example.service.impl;
 
 import com.perfiffer.example.service.IHelloService;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @date: 2018/2/16
  * @version: v2.7
  */
+@Component
 public class HelloServiceImpl implements IHelloService {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
