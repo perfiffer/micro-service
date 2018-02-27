@@ -1,6 +1,8 @@
 package com.perfiffer.example.service.impl;
 
+import com.perfiffer.example.client.IHiClient;
 import com.perfiffer.example.service.IHelloService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,9 +16,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloServiceImpl implements IHelloService {
 
+    @Autowired
+    IHiClient hiClient;
+
     @Override
     public String hello(String name) {
-        return "hello," + name;
+        return hiClient.hi(name);
     }
 
 }
