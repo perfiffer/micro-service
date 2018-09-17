@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @ClassName:${CLASSNAME}
+ * @ClassName: HelloServiceImpl
  * @Description:
- * @author: lurufeng
+ * @author: perfiffer
  * @company: 柠檬科技
  * @date: 2018/2/17
  * @version: v2.7
